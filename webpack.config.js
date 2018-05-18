@@ -1,8 +1,9 @@
 /**
  * Created by Fresher on 18/05/2018.
  */
-import path from 'path';
-let config = {
+let path = require("path");
+module.exports = {
+    mode: "development",
     entry: './src/index.ts',
     module: {
         rules: [
@@ -21,4 +22,3 @@ let config = {
         path: path.resolve(__dirname, 'dist')
     }
 };
-module.exports = config;
